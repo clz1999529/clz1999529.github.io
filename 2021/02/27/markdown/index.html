@@ -1,34 +1,344 @@
-extends _partial/layout.pug
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="吱儿喆"><meta name="copyright" content="吱儿喆"><meta name="generator" content="Hexo 5.4.0"><meta name="theme" content="hexo-theme-yun"><title>markdown的用法格式 | 车厘子的博客</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><script src="//at.alicdn.com/t/font_1140697_stqaphw3j4.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link class="aplayer-style-marker" rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script class="aplayer-script-marker" src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" defer></script><script class="meting-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js" defer></script><script>document.addEventListener(
+  "pjax:success",
+  function() {
+    if (window.aplayers) {
+      loadMeting();
+    }
+  },
+  !1
+);
+</script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.zhierzhe.top","root":"/","title":"车厘子的小站","version":"1.5.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><link rel="alternate" href="/atom.xml" title="车厘子的博客" type="application/atom+xml"><link rel="stylesheet" href="//example.min.css"><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="熟悉markdown的用法格式和文章head的键值对的用法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown的用法格式">
+<meta property="og:url" content="http://www.zhierzhe.top/2021/02/27/markdown/index.html">
+<meta property="og:site_name" content="车厘子的博客">
+<meta property="og:description" content="熟悉markdown的用法格式和文章head的键值对的用法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg">
+<meta property="article:published_time" content="2021-02-26T16:29:23.090Z">
+<meta property="article:modified_time" content="2021-02-27T13:04:30.225Z">
+<meta property="article:author" content="吱儿喆">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info mickey-mouse"><a class="site-author-avatar" href="/about/" title="吱儿喆"><img width="96" loading="lazy" src="/images/avatar.jpg" alt="吱儿喆"><span class="site-author-status" title="不想上学">😘</span></a><div class="site-author-name"><a href="/about/">吱儿喆</a></div><a class="site-name" href="/about/site.html">车厘子的博客</a><sub class="site-subtitle">不妨不妨，来日方长</sub><div class="site-desciption">今朝有酒今朝醉，明日愁来明日愁</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=564236685&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/clz1999529" title="GitHub" target="_blank" style="color:#181717"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="564236685@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/8314336" title="哔哩哔哩动画" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/5534495604" title="微博" target="_blank" style="color:#E6162D"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">markdown基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">1.2.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.</span> <span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.1.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">有序列表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5"><span class="toc-number">1.5.</span> <span class="toc-text">插入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">1.5.1.</span> <span class="toc-text">插入图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5"><span class="toc-number">1.5.2.</span> <span class="toc-text">插入链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91"><span class="toc-number">1.5.3.</span> <span class="toc-text">插入视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90"><span class="toc-number">1.5.4.</span> <span class="toc-text">插入音乐</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%BC%95%E7%94%A8"><span class="toc-number">1.6.</span> <span class="toc-text">代码引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.7.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E5%BC%8F%E6%89%A9%E5%B1%95"><span class="toc-number">1.8.</span> <span class="toc-text">样式扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E6%8A%98%E5%8F%A0details%E5%86%85%E5%AE%B9"><span class="toc-number">1.8.1.</span> <span class="toc-text">可折叠details内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8%E6%89%A9%E5%B1%95"><span class="toc-number">1.8.2.</span> <span class="toc-text">引用扩展</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text">hexo文章</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%A4%B4%E9%94%AE%E5%80%BC%E5%AF%B9"><span class="toc-number">2.1.</span> <span class="toc-text">文章头键值对</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://www.zhierzhe.top/2021/02/27/markdown/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="吱儿喆"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="车厘子的博客"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">markdown的用法格式</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2021-02-27 00:29:23" itemprop="dateCreated datePublished" datetime="2021-02-27T00:29:23+08:00">2021-02-27</time></div><span class="leancloud_visitors" id="/2021/02/27/markdown/" data-flag-title="markdown的用法格式"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/hexo/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">hexo</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/markdown/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">markdown</span></a><a class="tag" href="/tags/hexo/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">hexo</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h1 id="markdown基本语法"><a href="#markdown基本语法" class="headerlink" title="markdown基本语法"></a>markdown基本语法</h1><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。<br>由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。 如GitHub、CSDN、Scratch（中国社区）、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+<p>注：标准语法一般在#后跟个空格再写文字。</p>
+<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 这是一级标题</span>
+<span class="token title important"><span class="token punctuation">##</span> 这是二级标题</span>
+<span class="token title important"><span class="token punctuation">###</span> 这是三级标题</span>
+<span class="token title important"><span class="token punctuation">####</span> 这是四级标题</span>
+<span class="token title important"><span class="token punctuation">#####</span> 这是五级标题</span>
+<span class="token title important"><span class="token punctuation">######</span> 这是六级标题</span></code></pre>
 
-block content
-  - var post = page
-  - var post_type = getPropertyByType(post.type)
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>可以用不同的符号把文字包裹起来实现不同的效果</p>
+<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token bold"><span class="token punctuation">**</span><span class="token content">这是加粗的文字</span><span class="token punctuation">**</span></span>
+<span class="token italic"><span class="token punctuation">*</span><span class="token content">这是倾斜的文字</span><span class="token punctuation">*</span></span>`
+<span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">这是斜体加粗的文字</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>
+<span class="token strike"><span class="token punctuation">~~</span><span class="token content">这是加删除线的文字</span><span class="token punctuation">~~</span></span>
+<span class="token code keyword">`这是加飘号的文字`</span></code></pre>
+<p>效果如下</p>
+<p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
+<p><code>这是加飘号的文字</code></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>有的时候写文章需要引用到别人写的文字，这个时候就需要用到引用功能</p>
+<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span>这是引用的内容
+<span class="token blockquote punctuation">>></span>这是引用的内容
+<span class="token blockquote punctuation">>>></span>这是引用的内容</code></pre>
+<p>效果如下</p>
+<blockquote>
+<blockquote>
+<p>这是引用的内容</p>
+<blockquote>
+<p>这是引用的内容<br>这是引用的内容</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>注：无论是有序还是无序都需要在<code>-</code>或者<code>1.</code>后面加上空格，列表嵌套<br>上一级和下一级之间敲三个空格即可</p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">-</span> 文本1
+<span class="token list punctuation">-</span> 文本2
+<span class="token list punctuation">-</span> 文本3</code></pre>
+<p>效果如下</p>
+<ul>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> 文本1
+<span class="token list punctuation">2.</span> 文本2
+<span class="token list punctuation">3.</span> 文本3</code></pre>
+效果如下</li>
+</ul>
+<ol>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+<li>一级列表内容<ol start="2">
+<li>二级列表内容</li>
+<li>二级列表内容</li>
+<li>二级列表内容<h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2><h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3>在 Markdown 中，插入图片不需要其他按钮，你只需要使用<code>![](图片链接地址)</code>这样的语法即可，例如：<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url"><span class="token operator">!</span>[<span class="token content">图片无法显示时显示的</span>](<span class="token url">https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg</span>)</span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg" alt="图片无法显示时显示的" loading="lazy"></li>
+</ol>
+</li>
+</ol>
+<p>如果要指定图片大小格式则用</p>
+<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">height</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>白蛇<span class="token punctuation">"</span></span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>center</span> <span class="token punctuation">/></span></span></code></pre>
 
-  #post
-    article.hty-card.post-block(itemscope, itemtype='https://schema.org/Article')
-      include _partial/post/post-schema.pug
-      header.post-header
-        h1.post-title(itemprop='name headline', style=post.type ? `color: ${post_type.color}` : '')
-          if post.type
-            +icon(post_type.icon)
-          | #{post.title}
+<img src="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/white.jpg" width = "300" height = "200" alt="白蛇" align=center / loading="lazy">
 
-          if theme.post_edit.enable
-            include _partial/post/post-edit.pug
 
-        include _partial/post/post-meta.pug
+<h3 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h3><p>在 Markdown 中，插入链接不需要其他按钮，你只需要使用 <code>[显示文本](链接地址) </code>这样的语法即可，例如：</p>
+<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">[<span class="token content">车厘子</span>](<span class="token url">http://www.zhierzhe.top</span>)</span></code></pre>
+<p>样式如下</p>
+<p><a href="http://www.zhierzhe.top/">车厘子</a></p>
+<h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><ol>
+<li><p>插入b站等视频网站的iframe标签（不好控制窗口大小）</p>
+<pre class="language-none"><code class="language-none">&lt;iframe height&#x3D;100% width&#x3D;100% src&#x3D;&quot;&#x2F;&#x2F;player.bilibili.com&#x2F;player.html?aid&#x3D;11987637&amp;bvid&#x3D;BV18x411z7vz&amp;cid&#x3D;19782244&amp;page&#x3D;1&quot; scrolling&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; frameborder&#x3D;&quot;no&quot; framespacing&#x3D;&quot;0&quot; allowfullscreen&#x3D;&quot;true&quot;&gt; &lt;&#x2F;iframe&gt;</code></pre>
+<iframe src="//player.bilibili.com/player.html?aid=11987637&bvid=BV18x411z7vz&cid=19782244&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</li>
+<li><p>用video标签引用</p>
+<pre class="language-none"><code class="language-none">&lt;video width&#x3D;&quot;480&quot; height&#x3D;&quot;320&quot; controls&gt;
+&lt;source src&#x3D;&quot;&#x2F;movie&#x2F;白蛇.mp4&quot;&gt;
+&lt;&#x2F;video&gt;</code></pre>
+<video width="480" height="320" controls>
+<source src="/movie/白蛇.mp4">
+</video>
 
-        if post.url
-          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${post_type.color}`)=__('post.view_link')
+</li>
+</ol>
+<h3 id="插入音乐"><a href="#插入音乐" class="headerlink" title="插入音乐"></a>插入音乐</h3><ol>
+<li>iframe 标签插入</li>
+</ol>
+<pre class="language-none"><code class="language-none">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;330 height&#x3D;86 src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;308299&amp;auto&#x3D;0&amp;height&#x3D;66&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;nav class&#x3D;&quot;header-music&quot;&gt; </code></pre>
+<p>以下为实例：</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=308299&auto=0&height=66"></iframe>
+<nav class="header-music"> 
+2. meting标签（推荐使用）
 
-      section.post-body(itemprop='articleBody')
-        .post-content.markdown-body(style=`--smc-primary:${theme.colors.primary};`)!=post.content
+<pre class="language-none"><code class="language-none">&#123;% meting &quot;31654455&quot; &quot;netease&quot; &quot;song&quot; &quot;preload:auto&quot; %&#125;
+&#x2F;&#x2F;qq音乐的id获取比较麻烦 需要打开网页版qq搜到歌曲然后从网页链接获取id
 
-        if theme.reward.enable && page.reward !== false
-          include _partial/post/reward.pug
+选项	默认值	描述
+id	必须值	歌曲 id &#x2F; 播放列表 id &#x2F; 相册 id &#x2F; 搜索关键字
+server	必须值	音乐平台: netease, tencent, kugou, xiami, baidu
+type	必须值	song, playlist, album, search, artist
+fixed	false	开启固定模式
+mini	false	开启迷你模式
+loop	all	列表循环模式：all, one,none
+order	list	列表播放模式： list, random
+volume	0.7	播放器音量
+lrctype	0	歌词格式类型
+listfolded	false	指定音乐播放列表是否折叠
+storagename	metingjs	LocalStorage 中存储播放器设定的键名
+autoplay	true	自动播放，移动端浏览器暂时不支持此功能
+mutex	true	该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停
+listmaxheight	340px	播放列表的最大长度
+preload	auto	音乐文件预载入模式，可选项： none, metadata, auto
+theme	#ad7a86	播放器风格色彩设置</code></pre>
 
-        if theme.creative_commons.license && theme.creative_commons.post
-          include _partial/post/post-copyright.pug
+<p>以下为实例：</p>
 
-    if post.prev || post.next
-      include _partial/post/post-nav.pug
+    <div id="aplayer-nEydmOJL" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="1441758913" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+
+
+    <div id="aplayer-ABiyfczq" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="0008vcr34YK8Z0" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+
+<h2 id="代码引用"><a href="#代码引用" class="headerlink" title="代码引用"></a>代码引用</h2><p>需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。<br>如果引用的语句为多行，可以将```置于这段代码的首行和末行。如</p>
+<pre class="language-java" data-language="java"><code class="language-java">system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><pre class="language-none"><code class="language-none">| name          | age           | sex   |
+| ------------- |:-------------:| -----:|
+| zhangsan      | 10            | 男    |
+| lisi          | 20            | 女    |
+| wangwu        | 24            | 男    |
+第二行分割表头和内容。
+- 有一个就行，为了对齐，多加了几个
+文字默认居左
+-两边加：表示文字居中
+-右边加：表示文字居右
+注：原生的语法两边都要用 | 包起来。此处省略</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th align="center">age</th>
+<th align="right">sex</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>zhangsan</td>
+<td align="center">10</td>
+<td align="right">男</td>
+</tr>
+<tr>
+<td>lisi</td>
+<td align="center">20</td>
+<td align="right">女</td>
+</tr>
+<tr>
+<td>wangwu</td>
+<td align="center">24</td>
+<td align="right">男</td>
+</tr>
+</tbody></table>
+<h2 id="样式扩展"><a href="#样式扩展" class="headerlink" title="样式扩展"></a>样式扩展</h2><h3 id="可折叠details内容"><a href="#可折叠details内容" class="headerlink" title="可折叠details内容"></a>可折叠details内容</h3><pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">></span></span>Summary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">></span></span>
+商品
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">></span></span></code></pre>
+<details>
+<summary>Summary</summary>
+    商品详情：
+</details>
+
+<details>
+<summary>Summary</summary>
+<ul>
+<li><input disabled="" type="checkbox"> 维护一个超过 1k Star 的项目</li>
+<li><input disabled="" type="checkbox"> 写一本值得出版的书</li>
+<li><input disabled="" type="checkbox"> 做一款值得发售的游戏</li>
+<li><input disabled="" type="checkbox"> 做一部有故事的动画短片</li>
+<li><input disabled="" type="checkbox"> 画一本有趣的短篇漫画</li>
+<li><input disabled="" type="checkbox"> 写一首藏有回忆的歌</li>
+<li><input disabled="" type="checkbox"> 在乡村老家有一栋按照自己想法建造的房子</li>
+<li><input checked="" disabled="" type="checkbox"> 成为一个自己不讨厌的、有趣的人</li>
+</ul>
+</details>
+
+<h3 id="引用扩展"><a href="#引用扩展" class="headerlink" title="引用扩展"></a>引用扩展</h3><pre class="language-none"><code class="language-none">&gt; Primary
+
+&lt;div class&#x3D;&quot;success&quot;&gt;
+
+&gt; Success
+
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;warning&quot;&gt;
+
+&gt; Warning
+
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;danger&quot;&gt;
+
+&gt; Danger
+
+&lt;&#x2F;div&gt;
+
+&lt;div class&#x3D;&quot;info&quot;&gt;
+
+&gt; Info
+
+&lt;&#x2F;div&gt;</code></pre>
+
+<blockquote>
+<p>Primary</p>
+</blockquote>
+<div class="success">
+
+<blockquote>
+<p>Success</p>
+</blockquote>
+</div>
+
+<div class="warning">
+
+<blockquote>
+<p>Warning</p>
+</blockquote>
+</div>
+
+<div class="danger">
+
+<blockquote>
+<p>Danger</p>
+</blockquote>
+</div>
+
+<div class="info">
+
+<blockquote>
+<p>Info</p>
+</blockquote>
+</div>
+
+
+
+<h1 id="hexo文章"><a href="#hexo文章" class="headerlink" title="hexo文章"></a>hexo文章</h1><h2 id="文章头键值对"><a href="#文章头键值对" class="headerlink" title="文章头键值对"></a>文章头键值对</h2><pre class="language-none"><code class="language-none">title: &#x2F;&#x2F;写文章的标题
+description: &#x2F;&#x2F;文章内容描述，能在page页面看见
+email: 
+tags: &#x2F;&#x2F;标签
+	- java
+	- python
+categories: &#x2F;&#x2F;分类
+	- 随笔
+sticky: 100 &#x2F;&#x2F;置顶文章，100为权重
+aplayer: true &#x2F;&#x2F;使用aplayer播放器
+
+type: bilibili &#x2F;&#x2F;type标签可将其转为其他类型卡片，并跳转 url 设置的链接。有link，bilibili，douban，github，netease-cloud-music等内容
+url: https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;av8153395&#x2F;</code></pre></div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">给博主早餐加根鸡腿</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/Alipay.png"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/Alipay.png" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/QQpay.png"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/QQpay.png" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/WeChatpay.png"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/clz1999529/cdn/img/WeChatpay.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>吱儿喆</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://www.zhierzhe.top/2021/02/27/markdown/" title="markdown的用法格式">http://www.zhierzhe.top/2021/02/27/markdown/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2021/02/28/smallbug/" rel="prev" title="bug记录以及解决"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">bug记录以及解决</span></a></div><div class="post-nav-item"></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>要不要和我说些什么？</span><br></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
+  const valineConfig = {"enable":true,"appId":"v4xnnkaDABtGLsAHTiIIwfga-MdYXbMMI","appKey":"LwAEk69kvsqczve35O7xfWFp","placeholder":"客官确定不留下点什么再走吗 (≧∀≦)","avatar":null,"pageSize":10,"visitor":true,"highlight":true,"recordIP":false,"enableQQ":true,"meta":["nick","mail","link"],"el":"#valine-container","lang":"zh-cn"}
+  valineConfig.path = "/2021/02/27/markdown/"
+  new Valine(valineConfig)
+}, window.Valine);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2021 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 吱儿喆</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.5.1</span></div><div class="live_time"><span>本站已经马不停蹄的跑了</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2021-02-25T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div><div class="aplayer no-destroy" id="aplayer" data-id="308168565" data-server="netease" data-type="playlist" data-fixed="true" data-theme="#0078E7" data-loop="all" data-order="list" data-preload="auto" data-volume="0.7" data-mutex data-lrctype="0" data-listmaxheight="340px" data-storagename="metingjs"></div></div></body></html>
